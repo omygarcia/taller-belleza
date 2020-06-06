@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Talleres de belleza</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		@font-face{ 
+			font-family: 'kausan';
+			src: url('fonts/kaushan/kaushanscript-regular-webfont.eot');
+			src: url('fonts/kaushan/kaushanscript-regular-webfont.eot?#iefix') format('embedded-opentype'),
+			     url('fonts/kaushan/kaushanscript-regular-webfont.woff') format('woff'),
+			     url('fonts/kaushan/kaushanscript-regular-webfont.ttf') format('truetype'),
+			     url('fonts/kaushan/kaushanscript-regular-webfont.svg#webfont') format('svg');
+		}
+
+		@font-face {
+		  font-family: 'Material Icons';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: url(fonts/materialicons/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+		}
+
+		.material-icons {
+		  font-family: 'Material Icons';
+		  font-weight: normal;
+		  font-style: normal;
+		  font-size: 24px;
+		  line-height: 1;
+		  letter-spacing: normal;
+		  text-transform: none;
+		  display: inline-block;
+		  white-space: nowrap;
+		  word-wrap: normal;
+		  direction: ltr;
+		  -moz-font-feature-settings: 'liga';
+		  -moz-osx-font-smoothing: grayscale;
+		}
+
+
+		#header,#footer{
+			background: #036;
+			color:white;
+			font-family: 'kausan',Arial;
+			font-size:28px;
+		}
+
+		#content{
+			background: #ddd;
+		}
+
+		#header{
+			position: relative;
+			overflow: hidden;
+			height: 100vh;
+		}
+
+		#header h1{
+			position: absolute;
+			left: 30%;
+			top:30%;
+			text-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+			/*animacion*/
+			animation-duration: 3s;
+			animation-name: slidein;
+		}
+
+		#footer a
+		{
+			color:white;
+			text-decoration: none;
+		}
+
+		.flecha{
+			background: #800080;
+			border-radius:50%;
+			color:white;
+			cursor:pointer;
+			font-family: verdana;
+			font-size: 20px;
+			font-weight:bold;
+			padding: 25px;
+			position: absolute;
+			text-decoration: none;
+			left: 48%;
+			bottom: 40px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			box-sizing: border-box;
+			/*animacion*/
+			/*animation-duration: 2s;
+			animation-name: rebote;
+			animation-iteration-count: infinite;*/
+		}
+
+		/*.flecha::before{
+			content: "\f103";
+		}*/
+
+		.titulo2{
+			background: #c39bd3;
+			color:white;
+			font-size: 22px;
+			text-align: center;
+			text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+			padding: 5px;
+			width:100%;		
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		.titulo-taller:nth-child(even)
+		{
+			background: #d929be;
+			border-radius: 0 50% 0 0;
+			color:white;
+			padding: 5px;
+			text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+			width:150px;
+		}
+
+		.contenido-taller{
+			padding:15px;
+			font-size:16px;
+			text-align: justify;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+		.titulo-taller:nth-child(odd)
+		{
+			background: red;
+			width:150px;
+		}
+
+		@keyframes slidein{
+			from{
+				margin-left: 100%;
+				width:300%;
+			}
+
+			to{
+				margin-left: 0%;
+				width: 100%;
+			}
+		}
+
+		@keyframes rebote{
+			0%{
+				bottom: 40px;
+			}
+
+			50%{
+				bottom: 10px;
+			}
+
+			100%{
+				bottom: 40px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<img src="img/make-up.jpg" style="width:100%;">
+		<h1>Talleres de belleza</h1>
+		<a href="#titulo_talleres" class="flecha">
+			<i class="material-icons">keyboard_arrow_down</i>
+		</a>
+	</div>
+	<div id="content">
+		<h2 id="titulo_talleres" class="titulo2">Talleres</h2>
+		<h3 class="titulo-taller">Taller 1</h3>
+		<p class="contenido-taller">	
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<h3 class="titulo-taller">Taller 2</h3>
+		<p class="contenido-taller">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<h3 class="titulo-taller">Taller 3</h3>
+		<p class="contenido-taller">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+	<div id="footer">
+		Siguenos en redes sociales
+		<br />
+		<a href="https://www.facebook.com">
+			www.facebook.com
+			<i class="material-icons">cloud</i>
+		</a>
+		<br />
+		<a href="https://www.twitter.com">www.twitter.com</a>
+	</div>
+	<script>
+
+	</script>
+</body>
+</html>
