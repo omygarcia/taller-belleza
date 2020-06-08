@@ -172,11 +172,33 @@
 				bottom: 40px;
 			}
 		}
+
+		@media screen and (max-width: 450px)
+		{
+			#img1{
+				display: none;
+			}
+
+			#header{
+				background-image: url(img/make-up-reduce.jpg);
+				background-size: cover;
+			}
+
+			#header h1{
+				font-size: 32px;
+				left: 24%;
+			}
+
+			.flecha
+			{
+				left:44%;
+			}
+		}
 	</style>
 </head>
 <body>
 	<div id="header">
-		<img src="img/make-up-reduce.jpg" style="width:100%;">
+		<img id="img1" src="img/make-up-reduce.jpg" style="width:100%;">
 		<h1>Talleres de belleza</h1>
 		<a href="#titulo_talleres" class="flecha">
 			<i class="material-icons">keyboard_arrow_down</i>
